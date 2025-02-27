@@ -126,7 +126,9 @@ if DB_IS_AVAIL and DB_IS_READY:
         }
     }
 
-DATABASE_ROUTERS = ( 'django_tenants.routers.TenantSyncRouter',) 
+DATABASE_ROUTERS = ( 
+    'django_tenants.routers.TenantSyncRouter',
+) 
 # https://docs.djangoproject.com/en/5.1/ref/settings/#auth-password-validators
 
 AUTH_PASSWORD_VALIDATORS = [

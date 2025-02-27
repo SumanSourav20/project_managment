@@ -1,0 +1,50 @@
+/project_root/
+│
+├── /config/                     
+│   └── settings/
+│       ├── base.py              
+│       ├── development.py       
+│       ├── production.py        
+│
+├── /apps/                       
+│   ├── /core/                   
+│   │   ├── migrations/
+│   │   ├── models.py
+│   │   ├── views.py
+│   │   ├── serializers.py       # DRF serializers
+│   │   ├── urls.py
+│   │   ├── admin.py
+│   │   ├── tests.py
+│   │   └── permissions.py       # Custom permissions
+│   ├── /project_management/     
+│   │   ├── models.py
+│   │   ├── views.py
+│   │   ├── serializers.py
+│   │   ├── urls.py
+│   │   ├── filters.py           # DRF filters
+│   │   ├── pagination.py        # Custom pagination
+│   │   └── permissions.py
+│
+├── /api/                        
+│   ├── __init__.py
+│   ├── urls.py                  # Central API router
+│   ├── views.py
+│   ├── serializers.py
+│   └── throttling.py            # Rate limiting configurations
+│
+├── /utils/                      
+│   └── custom_exceptions.py     # DRF exception handling
+│
+├── /tests/                      
+│   └── test_api.py              # DRF API endpoint tests
+│
+├── /docs/                       
+│   └── openapi_schema.yml       # OpenAPI/Swagger docs
+│
+├── Dockerfile
+├── docker-compose.yml
+├── manage.py
+├── requirements.txt
+├── requirements-dev.txt
+├── .env
+└── README.md

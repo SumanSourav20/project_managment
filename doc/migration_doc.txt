@@ -1,3 +1,5 @@
+to migrate tenant wise:
+
 python manage.py migrate_schemas --shared
                                   --tenant
                                   --schema=tenantname
