@@ -9,7 +9,11 @@ django-tenants = "*"
 python-dotenv = "*"
 psycopg2-binary = "*"
 django-debug-toolbar = "*"
-django-phonenumber-field = "*"
+django-phonenumber-field = {extras = ["phonenumbers"], version = "*"}
+djangorestframework = "*"
+markdown = "*"
+django-filter = "*"
+djangorestframework-simplejwt = "*"
 
 [dev-packages]
 
