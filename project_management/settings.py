@@ -42,6 +42,7 @@ SHARED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'phonenumber_field',
 ]
 
 TENANT_APPS = [
@@ -51,6 +52,7 @@ TENANT_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'phonenumber_field',
 ]
 
 INSTALLED_APPS = SHARED_APPS + [

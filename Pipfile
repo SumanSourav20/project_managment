@@ -9,6 +9,7 @@ django-tenants = "*"
 python-dotenv = "*"
 psycopg2-binary = "*"
 django-debug-toolbar = "*"
+django-phonenumber-field = "*"
 
 [dev-packages]
 
