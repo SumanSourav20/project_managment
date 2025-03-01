@@ -26,7 +26,7 @@ class RegisterView(generics.CreateAPIView):
         user = serializer.save()
         
         # Create response data
-        data = {
+        response = {
             "user": {
                 "id": user.id,
                 "username": user.username,
@@ -37,7 +37,7 @@ class RegisterView(generics.CreateAPIView):
             "message": "User registered successfully"
         }
         
-        return Response(data, status=status.HTTP_201_CREATED)
+        return Response(response, status=status.HTTP_201_CREATED)
 
 class UserProfileViewSet(viewsets.ModelViewSet):
     queryset = UserProfile.objects.all()

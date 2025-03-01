@@ -16,11 +16,14 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.conf import settings
-from django.urls import path
+from django.urls import path, include
 from tenant_manager.admin import tenant_admin_site
 from debug_toolbar.toolbar import debug_toolbar_urls
+from tenant_manager.views import TenantView
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('admin_tenants/', tenant_admin_site.urls)
+    path('admin_tenants/', tenant_admin_site.urls),
+    path('register/', TenantView.as_view(), name='create_tenant'),
+    path('tenants/', include('tenant_manager.urls'))
 ] + debug_toolbar_urls()
